@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   width: 100vw;
   text-align: center;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1 {
@@ -171,4 +171,25 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }
