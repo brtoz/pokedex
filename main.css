@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #42275a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #734b6d,
+    #42275a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #734b6d,
+    #42275a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 20px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  font-size: 1rem;
+  padding: 15px 20px;
+  border: none;
+}
+
+input {
+  font-weight: bold;
+  border-radius: 15px;
+  margin-right: 0.6rem;
+}
+
+#srch {
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.poke-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.poke-box {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.poke-box:hover {
+  transition: all ease-out 0.4s;
+  transform: scale(1.1);
+}
+
+.poke-box:hover {
+  filter: brightness(110%);
+}
+
+.poke-box img {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.poke-box p {
+  margin: 10px auto;
+}
+
+.poke-box .poke-name {
+  text-transform: capitalize;
+}
+
+.poke-navigation {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-button {
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.github-ribbon {
+  position: absolute;
+}
+
+.poke-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poke-footer span {
+  margin-bottom: 15px;
+}
+
+.back-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typed-cursor {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
